@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Rankmycv</title>
+    <link rel="stylesheet" href="rankmycv.css">
+  </head>
+  <body>
+ <div id="wrapper"> 
+
+      <div id="content_wrapper"> 
+
+        <div id="content_inner_wrapper"> 
+			<div id="title"> 
+				<div class="left"> RATE MY CV</div>
+				<div class="right"> 
+					Every day companies use algorithms to match resumes to job applications.<br/>
+					This tool gives you the compatibility rate of your resume with a job proposal.
+				</div>
+			</div>
+ 			<div id="matcher_wrapper">
+				<div id="cvinput">
+					<div class="matcher_title">PASTE YOUR RESUME HERE</div>
+					<div class="input_wrapper">
+						<textarea id="cv"></textarea>
+					</div>
+				</div>
+				<div id="jobinput">
+					<div class="matcher_title">PASTE YOUR JOB OFFER HERE</div>
+					<div class="input_wrapper">
+						<textarea id="job"></textarea>
+					</div>
+				</div>
+			</div>
+			<div id="result">
+			  <span class="text hint">After pasting your text just hit </span>
+				<span class="text result">Your compatibility is</span>
+				<span id="compatibility" class="value result">78%</span>
+			</div>
+			<div id="rateitbtn"> RATE IT</div>
+
+        </div> 
+
+      </div> 
+
+    </div> 
+
+    <div id="footer_wrapper"> 
+
+      <div id="footer_inner_wrapper"> 
+
+        <div id="footermsg">
+			This tool was made to help job seekers adjust their resume to a job offer. 
+			<span class="right"> Made by: francisco.m.s.ferreira<span>@</span>gmail.com </span>
+			</div> 
+
+      </div> 
+
+    </div>
+
+    <script type="application/dart" src="web/rankmycv.dart"></script>
+    <script src="http://dart.googlecode.com/svn/branches/bleeding_edge/dart/client/dart.js"></script>
+  </body>
+</html>
