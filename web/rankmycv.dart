@@ -14,6 +14,7 @@ void main() {
     print(r.getMaxScore());
     num result = ((r.CalculateScore() / r.getMaxScore()) * 100);
     print(result.toInt());
+    result = result > 100 ? 100 : result;
     query("#compatibility").text = "${result.toInt().toString()}%";
     queryAll("#result .hint").forEach((Element element) {
       element.style.display = "none";
