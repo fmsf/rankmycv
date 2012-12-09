@@ -19,6 +19,10 @@ class Ranker {
     return totalScore;
   }
   
+  String getHighlightedText(){
+    return _job.highlightText(_cv);
+  }
+  
   int getMaxScore(){
     return _job.getFilteredInputSize();
   }

@@ -10,8 +10,6 @@ void main() {
   query("#rateitbtn").on.click.add((e) {
     print("rateitbtn clicked");
     Ranker r = new Ranker();
-    print(r.CalculateScore());
-    print(r.getMaxScore());
     num result = ((r.CalculateScore() / r.getMaxScore()) * 100);
     print(result.toInt());
     result = result > 100 ? 100 : result;
@@ -23,6 +21,8 @@ void main() {
     queryAll("#result .result").forEach((Element element) {
       element.style.display = "inline";
     });
+    
+    query("#matchedText").innerHtml=r.getHighlightedText();
     
   });
     
