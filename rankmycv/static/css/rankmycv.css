@@ -1,0 +1,85 @@
+/* http://colorcombos.com/color-schemes/423/ColorCombo423.html */
+
+html, body {
+	       height: 100%;
+	 }
+	body {
+	       margin: 0px;
+	       padding: 0px;
+		   background: #FFFFFF;
+	 }
+	div#wrapper {
+	       width: 100%;
+	       min-height: 100%;
+	       height: auto !important;
+	       height: 100%;
+	       margin: 0px 0px -41px 0px;
+	 }
+	div#footer_wrapper {
+	       width: 100%;
+	       height: 41px;
+	       background: #153450;
+	       color: #FFFFFF;
+	 }
+	div#content_wrapper {
+	       width: 100%;
+	       padding: 0px 0px 41px 0px;
+	 }
+	div#footer_wrapper, div#content_wrapper {
+	       min-width: 942px;
+	 }
+	div#footer_inner_wrapper, div#content_inner_wrapper {
+	       width: 942px;
+	       margin: 0px auto;
+	 }
+	
+	div#content_inner_wrapper > div, #footermsg {
+		position: relative;
+	}
+	
+	div#title{ 
+		font: 34px 'Oswald', sans-serif; 
+		overflow: auto;
+	}
+	#footermsg{ font: 16px 'Droid Sans', sans-serif; padding: 10px;}
+	.left { float: left; }
+	.right { float: right; }
+	div#title > div { min-height: 40px; }
+	div#title div.left{  background: #153450; color: #FFF; padding-top: 10px; padding-bottom: 10px; padding-left: 50px; padding-right:126px; 	max-height: 60px; }
+	div#title div.right{ font: 16px 'Droid Sans', sans-serif; background: #153450; padding-top: 10px; padding-bottom: 10px; padding-left: 20px; padding-right: 20px; color: white;}
+
+	div#content_inner_wrapper{ overflow: auto;}
+	div#content_inner_wrapper div#matcher_wrapper{ overflow: auto; padding-left: 0px; }
+
+	div#matcher_wrapper > div {
+		float: left;
+		padding-top: 10px;
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-bottom: 10px;
+		color: #FFFFFF;
+		height: 340px;
+	}
+	
+	textarea { resize: none; }
+	div#matcher_wrapper > div .matcher_title { font: 16px 'Droid Sans', sans-serif; margin-bottom: 10px;}
+	div#matcher_wrapper > div .input_wrapper textarea { height: 300px;}
+
+	div#cvinput{ background: #447294; width: 442px;}
+	div#jobinput{ background: #447294; width: width: 440px;}
+	div#cvinput textarea { min-width: 440px; max-width: 440px; border: 0px;}
+	div#jobinput textarea { min-width: 430px; max-width: 430px; barder: 0px;}
+	
+	div#result{overflow: auto; float: left; font: 42px 'Droid Sans', sans-serif; height: 48px; background: #153450; padding-left: 65px; padding-top: 10px; padding-bottom: 10px; color: #FFFFFF; width: 625px}
+	div#content_inner_wrapper > div#rateitbtn{ background: #E95D22; height: 48px; float: right; font: 42px 'Oswald', sans-serif; text-align: center;cursor: pointer; cursor: hand; padding-top: 10px; padding-bottom: 10px; padding-left: 45px; padding-right: 45px; color: #FFFFFF;}
+	div#content_inner_wrapper > div#rateitbtn:active{ margin-top: -1px;}
+	div#result span.result { display: none; }
+
+  #matchedTextWrapper { clear: both; padding: 10px;  background: #EAEAEA; }
+  pre#matchedText { white-space: -moz-pre-wrap; /* Mozilla, supported since 1999 */
+    white-space: -pre-wrap; /* Opera */
+    white-space: -o-pre-wrap; /* Opera */
+    white-space: pre-wrap; /* CSS3 - Text module (Candidate Recommendation) http://www.w3.org/TR/css3-text/#white-space */
+    word-wrap: break-word; /* IE 5.5+ */ }
+  span.highlight { color: #0000FF; }
+	#matchedTextWrapper .matchedTextTitle { font: 16px 'Droid Sans', sans-serif; border-bottom: 1px solid #CDCDCD; padding-bottom: 20px;}
