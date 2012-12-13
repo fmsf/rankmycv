@@ -11,8 +11,8 @@ void main() {
     print("rateitbtn clicked");
     Ranker r = new Ranker();
     num result = ((r.CalculateScore() / r.getMaxScore()) * 100);
-    print(result.toInt());
     result = result > 100 ? 100 : result;
+    result = result.isNaN ? 0 : result;
     query("#compatibility").text = "${result.toInt().toString()}%";
     queryAll("#result .hint").forEach((Element element) {
       element.style.display = "none";
@@ -22,7 +22,10 @@ void main() {
       element.style.display = "inline";
     });
     
-    query("#matchedText").innerHtml=r.getHighlightedText();
+    if(result>0){
+      query("#matchedText").innerHtml=r.getHighlightedText();
+      query("#matchedTextWrapper").style.display="block";
+    } 
     
   });
     
