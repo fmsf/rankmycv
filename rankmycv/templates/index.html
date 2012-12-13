@@ -33,14 +33,16 @@
 					</div>
 				</div>
 			</div>
-			<div id="result">
-			  <span class="text hint">After pasting your text just hit </span>
-				<span class="text result">Your compatibility is</span>
-				<span id="compatibility" class="value result">78%</span>
+			<div id="result_wrapper">
+  			<div id="result">
+  			  <span class="text hint">After pasting your text just hit </span>
+  				<span class="text result">Your compatibility is</span>
+  				<span id="compatibility" class="value result">78%</span>
+  			</div>
+  			<div id="rateitbtn" title="This is currently effective only in english">RATE IT</div>
 			</div>
-			<div id="rateitbtn" title="This is currently effective only in english!!!">RATE IT</div>
       <div id="matchedTextWrapper" style="display:none">
-        <div class="matchedTextTitle">Highlighted in the text bellow, are the keywords that match the job offer. This is what the recruiter, or program will be looking at. Try editing the resumee to have the highest compatibility possible, while keeping it always true. If this helps you please send me some feedback.</div>
+        <div class="matchedTextTitle">Highlighted in the text bellow, are the keywords that match the job offer. This is what the recruiter, or program will be looking at. Try editing the resumee to have the highest compatibility possible, while keeping it always true.</div>
         <pre id="matchedText">
           
           
@@ -65,6 +67,22 @@
       </div> 
 
     </div>
-     <script type="text/javascript" src="/static/js/rankmycv.dart.js"></script>
+    
+    <script type="text/javascript" src="/static/js/rankmycv.dart.js"></script>
+    <script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-8153800-6']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
   </body>
 </html>
+
+
