@@ -62,7 +62,7 @@ class InputText {
     int filteredSize = 0;
     Set<String> verifiedWords = new Set();
     _inputSet.forEach((String s) {
-      if(s.length>0 && enStopWords.contains(s) && !verifiedWords.contains(s)){
+      if(s.length>0 && !enStopWords.contains(s) && !verifiedWords.contains(s)){
         filteredSize += 1;
         verifiedWords.add(s);
       }
